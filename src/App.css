@@ -1,0 +1,100 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div.App{
+  padding-top: 95px !important;
+}
+div.navbar{
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+div.navbar input{
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #333536;
+  max-width:500px;
+}
+div.sidebar{
+  z-index: 1;
+  position: fixed;
+  max-width: 320px;
+  height: 100vw;
+  margin: 0;
+}
+div.feed{
+  margin-left: 320px;
+}
+div.sidebar-item{
+  background-color:#333536;
+  color: #ffff;
+  border-radius: 25px;
+  margin: 6px 0;
+  height: 50px;
+  padding-left: 15px;
+}
+div.sidebar-item:hover{
+  background-color: transparent;
+  border: 1px solid #333536;
+  color: #333536;
+  transition: .3s;
+  cursor: pointer;
+}
+
+div.video-card{
+  cursor: pointer;
+  margin: 5px;
+  height: 290px;
+  min-width:320px;
+}
+div.video-card-display{
+  height: 100%;
+  margin-bottom: 15px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+button.video-card-button{
+  border: none;
+  background-color: #333536;
+  color: #ffff;
+  border-radius: 20px;
+  margin-right: 5px;
+  padding: 2px 10px;
+  font-size: .8em;
+}
+button.video-card-button:hover{
+  border: 1px solid #333536;
+  color: #333536;
+  transition: .3s;
+  background-color: transparent;
+}
+p.video-card-title{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+
+
+/* loader */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }
